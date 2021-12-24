@@ -1,0 +1,162 @@
+  1.if(condition/expression):
+	st1
+	st2
+else:
+	st3
+	st4
+example
+age = int(input("Enter age : "))
+if(age>18):
+    print("eligible for vote")
+else:
+    print("not eligiblr for vote")
+
+
+2.elif 
+if(condition/expression):
+	st1
+	st2
+elif(condition): -we will write so many elifs 
+	st3
+	st4
+else:              conclusion with only else
+ 	st5
+	st6
+example
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+c= int(input("Enter c value : "))
+if (a>b and a>c):
+    print("a is greater than c and b")
+elif(b>a and b>c):
+    print("b is greater than a and c")
+else:
+    print("c is greater than a and b")
+
+3.if(condition/expression):
+	if(condition/expression):
+		st1
+		st2
+	else:
+		st3
+		st4
+else:
+	st5
+	st6
+example
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+if a>=b:
+    if a==b:
+        print("both are equal")
+    else:
+        print("a is greater than b")
+else:
+    print("a is less than b")
+
+programs
+
+age = int(input("Enter age : "))
+if(age>18):
+    print("eligible for vote")
+else:
+    print("not eligiblr for vote")
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+if(a>b):
+    print("a is greater than b")
+else:
+    print("a is less than b")
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : " )) 
+c= int(input("Enter c value : "))
+if (a>b and a>c):
+    print("a is greater than c and b")
+elif(b>a and b>c):
+    print("b is greater than a and c")
+else:
+    print("c is greater than a and b")
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+if a>=b:
+    if a==b:
+        print("both are equal")
+    else:
+        print("a is greater than b")
+else:
+    print("a is less than b")
+for x in range(1,11):
+    print(x,end=" ")
+for x in range(1,21):
+    if(x%2!=0):
+        print(x)
+        
+
+a =int(input("enter the age"))
+if(a>35):
+    print("oldage")
+elif(a>18 and a<35):
+    print("middle age")
+else:
+    print("teenage")
+    
+
+a = int(input("enter the student marks"))
+if(a>=90):
+    print("distinction")
+elif(80<a<90):
+    print("grade a")
+elif(70<a<80):
+    print("grade b")
+elif(60<a<70):
+    print("grade c")
+elif(50<a<60):
+    print("grade d")
+elif(40<a<50):
+    print("grade e")
+else:
+    print("failed")
+    
+
+ 
+a = int(input("enter the student marks"))
+if(a<40):
+    print("failed")
+elif(a>40 and a<50):
+    print("grade e")
+elif(a>50 and a<60):
+     print("grade d")
+elif(a>60 and a<70):
+    print("grade c")
+elif(a>70 and a<80):
+     print("grade b")
+elif(a>80 and a<90):
+    print("grade a")
+else:
+    print("distinction")
+a = int(input("enter the length value"))
+b = int(input("enter the breadth value"))
+if(a!=b):
+    print("rectangle")
+else:
+    print("square")
+
+a = int(input("enter the year of service"))
+b = int(input("enter the value of salary"))
+if(a<5):
+    print("no bonus",b)
+else:
+    print("bonus is",0.05*b)
+
+a = int(input("enter the total classes held"))
+b = int(input("enter the number of classes attend"))
+if(b/a>=0.75):
+    print("eligible for sit exam")
+else:
+    print("not eligible")
+a = input("enter attendance percentage ")
+b = input("medical certificate of prsence 0 or 1")
+if(a!=75 and b==1):
+    print(" not eligible")
+else:
+    print("eligible")

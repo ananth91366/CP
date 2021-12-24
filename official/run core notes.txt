@@ -1,0 +1,649 @@
+ 23/11/2020
+
+ variable:
+---------
+
+it is nothing but a memory or contanier,it caqn holds some data
+
+-> must be start with letters(C/S) and _(underscore)
+->does not start with digits
+-> does not start with special chars nd space 
+->does not use keywords(33) as a variable name
+->variable names are case sensitive
+
+
+# => for single line comment section purpose we are using
+''' or """ : for multiple line comment section purpose 
+
+type casting:
+to convert the one data type to another data type
+
+default => it takes str 
+
+Errors: syntax,indedntation,name
+
+ Data base is ntg but Table ,Table contains rows and columns
+
+
+======================================
+
+
+24/11/2020
+a = 10
+b = 20
+
+print(a+b)
+
+operators:perform an operation between two operances
+
+arithametic(a+b,a-b,a*c,a/b,a//b,a%b)
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+print("sum of a and b is : ",(a+b))
+print("sub is : ",a-b)
+print("mul is : ",a*b)
+print("div is : ",a%b)
+
+
+assignment(a+=5,a-=6,a*=6,a%=3)
+a = 10
+print("a value is : ",a)
+a+=5 # a=a+5
+print("after adding 5 the a value : ",a)
+a*=6
+print("after mul by 6 the a value ",a)
+a%=10
+print("after div by 10 a value is",a)
+
+  
+relational
+x = 3
+print(x>2 and x<4) and both true only true
+print(x>3 and x<4)
+print(x>3 or x>4) or any one is true its true
+
+logical
+print(5&7) amplicent
+print(5|7) landa
+
+bitwise
+print(20>>3) >> division
+print(20<<3) << multiplication both done with 2 only 3 represents repetations
+
+
+membership
+s = "iam learning python"
+print('python' in s)
+print('python' not in s)
+
+
+identity
+a = 10
+print(id(a))
+b = 20
+print(id(b))
+print(a is not b)
+
+normal division a/b gives decimals
+flowre division a//b without decimals
+modular division a%b reminder value
+
+1.if(condition/expression):
+	st1
+	st2
+else:
+	st3
+	st4
+example
+age = int(input("Enter age : "))
+if(age>18):
+    print("eligible for vote")
+else:
+    print("not eligiblr for vote")
+
+
+2.elif 
+if(condition/expression):
+	st1
+	st2
+elif(condition): -we will write so many elifs 
+	st3
+	st4
+else:              conclusion with only else
+ 	st5
+	st6
+example
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+c= int(input("Enter c value : "))
+if (a>b and a>c):
+    print("a is greater than c and b")
+elif(b>a and b>c):
+    print("b is greater than a and c")
+else:
+    print("c is greater than a and b")
+
+3.if(condition/expression):
+	if(condition/expression):
+		st1
+		st2
+	else:
+		st3
+		st4
+else:
+	st5
+	st6
+example
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+if a>=b:
+    if a==b:
+        print("both are equal")
+    else:
+        print("a is greater than b")
+else:
+    print("a is less than b")
+loops
+     for  while
+for loop
+    range(start(0),stop(user).step(1)) 0-10 means 9 values
+for x in range(1,11):
+    print(x,end=" ")
+for x in range(1,21):
+    if(x%2!=0):
+        print(x)
+-----------------------------------------------
+-----------------------------------------------
+
+25/11/2020
+
+'''
+for i in range(1,11):
+    if i == 6:
+        continue
+    print(i,end=" ")
+
+for i in range(1,11):
+    if i == 6:
+        break
+    print(i,end=" ")
+
+for x in range(1,11):
+    if x%2!=0:
+        print(x)
+
+
+for x in range(1,41):
+    if x%3==0 or x%5==0:
+        print(x)
+
+
+print(chr(65))
+print(ord('A'))
+print(ord('a'))
+print(chr(100))
+
+
+for x in range(1,6):
+    for y in range(1,4):
+        print(chr(64+x),end=" ")
+    print()
+
+i = 0
+while i<=10:
+    print(i)
+    i +=1
+
+* for loop uses for exact knowing situation
+*while loop uses for unkonwn situation
+https://www.tutorialspoint.com/python/python_tuples.htm
+collections: Data structures data types
+------------
+
+list
+tuple
+set
+dictionary
+----------------
+
+list:
+-----
+->it is a collection of hetrogenous objects
+->[] => square brackets
+-> list follows insertion order(fifo)
+-> list allows duplicate elements
+-> list follows index position
+-> list is mutable
+
+=============================
+
+
+l = [1,2.5,"python",True]
+print(type(l))
+print(l)
+
+l = [1,2,3,4,5,6]
+#print(l[2])
+l.append("hyd")
+print(l)
+l1 = ["a","b","c"]
+l.extend(l1)
+print(l)
+l[6]="hyderabad"
+print(l)
+l.insert(2,"python")
+print(l)
+print(len(l))
+l.pop()
+print(l)
+l.remove("hyderabad")
+print(l)
+
+l = [12,6,3,7,123,45,87,65]
+l.sort(reverse=True)
+print(l)
+
+l = [1,2,3,4,[5,6,7],8,9,10]
+
+print(l[4])
+print(l[4][1])
+l[4][1] = 66
+print(l[4][1])
+print(l)
+
+l = [1,2,[3,4],5,6,[7,8,9],11]
+print(l[5][2])
+
+ 
+l = [10,20,30,40,50]
+l1 = []
+
+for x in l:
+    r = x*2
+    l1.append(r)
+
+
+print(l1)
+
+print("------------------")
+
+print(list(x*2 for x in l))
+
+'''
+
+l = [1,2,3,4,5]
+l1 = []
+
+while l:
+    x = l.pop()
+    l1.append(x)
+    print(l1)
+print("--------------------")
+print(l)
+===========================================
+26/11/2020
+
+l = [10,21,33,42,50]
+l1 = []
+
+
+for x in l:
+    y = x%5
+    l1.append(y)
+print(l1)
+
+l = [1,2,3,[4,5,6],7,8,[9,10],11,12]
+print(l[3])
+print(l[3][1])
+print(l[6][1])
+l[3][1]= 55
+print(l)
+
+
+l = [10,20,30,40,50,60,70,80,90,100]
+print(l[2:6])
+print(l[3:9])
+prisnt(l[1:8:2])
+
+l = [1,2,3,4,5]
+print(l[:])
+print(l[:-3])
+
+l = [1,2,3,45,65,86,4,6]
+print(l[-5:-2])
+
+l = [1,2,3,4,5]
+print(l)
+del l
+print(l)
+#l.clear()
+#print(l)
+
+l = [1,2,3,4,5]
+print(l[:-1])
+print(l[::-1])
+
+#t = (1,2.5,"python")
+#print(t)
+t1= (1,5.6,2,ord("a"),8,3,9,3.8)
+print(sorted(t1))
+
+l = (1,2,3,4,2,2,2,2,2,5,6,7,8)
+print(l.count(2))
+
+'''
+===========================================
+27/11/2020
+
+
+l=[
+    ['01/02/1994','south africa','notout','112'],
+    ['03/02/1994','England','out','60'],
+    ['10/02/1994','south africa','out','40'],
+    ['10/03/1994','south africa','runout','50'],
+    ['20/03/1994','south africa','out','50'],
+    ['30/02/1994','England','out','68'],
+    ['03/04/1994','England','out','48'],
+    ['23/02/1994','WI','out','60'],
+    ]
+
+1) write the logic for sum of the scores of south africa ?
+112+40+50+50 => 252
+
+2) write the logic for sum of score of all the countries in the month of 2?  
+
+3) all countries total score nd avg?
+
+================================
+
+l = [[1],[2],[3,4],[5]]
+l1 = []
+
+for x in l:
+    for y in x:
+        l1.append(y)
+
+print(l1)
+
+l = [1,2,3,4,5]
+print(l[:-1])
+print(l[::-1])
+
+s = "python"
+
+print(s[:-1])
+print(s[::-1])
+
+l = [12,34,45]
+
+l1 = []
+for x in l:
+    y = str(x)[::-1]
+    l1.append(int(y))
+print(l1)
+
+x = "21"
+print(type(x))
+y = int(x)
+print(type(y))
+
+
+s = {1,2.5,"python"}
+print(s)
+s.add(33)
+print(s)
+s1 = {12,43,55}
+s.update(s1)
+print(s)
+
+s = {1,2,3,4,5,2,2,21,3}
+print(s)
+
+s = {1,2,3,4,5}
+s.pop()
+print(s)
+s.remove(3)
+print(s)
+s.remove(3)
+print(s)
+
+s = {1,2,3,4,5}
+s.discard(3)
+print(s)
+s.discard(3)
+print(s)
+
+s = {1,2,3,4}
+s1 = {3,4,5,6}
+print(s.union(s1))
+print(s.intersection(s1))
+print(s.difference(s1))
+print(s1.difference(s))
+
+s = {1,2,3,4,5}
+s1 = {2,3}
+print(s.issuperset(s1))
+print(s1.issubset(s))
+s.clear()
+print(s)
+del s
+print(s)
+
+s = {1,2,3,4,5,6,6,7,8,9}
+print(len(s))
+
+s = {1,2,3,4,5}
+s1 = set()
+for x in s:
+    x*=2
+    s1.add(x)
+print(s1)
+
+print("--------------")
+print(set(x*2 for x in s))
+
+l = [1,2,3,2,2,4,2,5]
+#print(list(set(l)))
+l1 = []
+
+for x in l:
+    if x not in l1:
+        l1.append(x)
+
+print(l1)
+
+t = (1,2,3,4,2,2,1,6)
+print(tuple(set(t)))
+
+
+d = "27/11/2020"
+print(d[3:5])
+'''
+
+l = [1,2,3,4,5,6,7,8,9,10]
+print(l[::-2])
+#print(l[len(l)-2])
+ ====================================
+28/11/2020
+dictionary:
+-----------
+
+{key:value,key2:val2}
+
+{1:2,1:3}
+
+it contains key and value
+it is collection of hetrogenous objects
+
+{"a":12,2:"b"}
+-> mutable
+{} => we can defined
+
+=========================
+
+a = 10
+
+a= a+5
+print(a)
+
+=============================
+
+'''
+d = {1:2,"b":3}
+print(d)
+d[4] = "python"
+print(d)
+
+print(d[4])
+
+d = {1:2,3:4,5:6}
+d[3] = 44
+print(d)
+d.popitem()
+print(d)
+d.pop(1)
+print(d)
+'''
+
+'''
+d = {1:2,"b":23,"c":34}
+for x in d.items():
+    print(x)
+    
+d.clear()
+print(d)
+
+d = {1:2,3:4,5:6}
+
+d1 = {}
+
+for x,y in d.items():
+    z= y*2
+    a = x*3
+    d1[a]=z
+
+print(d1)
+'''
+
+d = {
+    "id":{"a":123,"b":"hyd"},
+    "id1":{"c":222,"d":"xyz"}
+}
+
+'''
+for x in d.keys():
+    print(x)
+
+for y in d.values():
+    print(y)
+
+
+for x,y in d.items():
+    for z in y.values():
+        print(z)
+
+d.popitem()
+print(d)
+
+print(d["id"]["b"])
+
+s = "python"
+print(s[2:4])
+
+s = "python"
+print(list(s))
+l = ['p', 'y', 't', 'h', 'o', 'n']
+res = "".join(l)
+print(res)
+
+s = "i am learning python"
+count = 0
+for x in s.split("a"):
+    count+=1
+    print(x)
+print(count)
+
+s = "   python    "
+print(s)
+print(s.lstrip())
+
+l = (1,2,3,4,5)
+l1 = ["a","b","c","d","e",6]
+
+print(list(zip(l,l1)))
+
+n = "2020"
+print(type(n))
+x = str(n)
+print(type(x))
+print(list(int(n)))
+
+l = [2,0,2,0]
+
+
+s = "abc"
+print(s)
+a = s[::-1]
+print(a)
+
+word = input("enter a word : ")
+if word == word[::-1]:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+n = int(input("enter a no : "))
+x = str(n)
+if x == x[::-1]:
+    print("palindrome")
+else:
+    print("not a palindrome")
+'''
+#print(8%10)
+'''
+num = int(input("Enter value : "))
+temp = num
+
+r = 0
+while num>0:
+    d = num%10
+    r = r*10+d
+    num = num//10
+
+if temp == r:
+    print("palindrome no")
+else:
+    print("not a palindrome")
+'''
+
+l=[
+    ['01/02/1994','south africa','notout','112'],
+    ['03/02/1994','England','out','60'],
+    ['10/02/1994','south africa','out','40'],
+    ['10/03/1994','south africa','runout','50'],
+    ['20/03/1994','south africa','out','50'],
+    ['30/02/1994','England','out','68'],
+    ['03/04/1994','England','out','48'],
+    ['23/02/1994','WI','out','60'],
+    ]
+
+tot = 0
+for x in l:
+    if x[1] == "south africa":
+        tot+=int(x[3])
+print(tot)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

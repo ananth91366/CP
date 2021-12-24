@@ -1,0 +1,19 @@
+t = (1,2,3,4,2,2,1,6)
+print(tuple(set(t)))
+
+t = (1,2.5,"python")
+print(t)
+t1= (1,5.6,2,ord("a"),8,3,9,3.8)
+print(sorted(t1))
+
+l = (1,2,3,4,2,2,2,2,2,5,6,7,8)
+print(l.count(2))
+t = ("a","b","c",1,2,3,"ananth")
+print(t)
+
+t = ("ananth","ganesh",ord("b"),6,7,8,)
+print(t)
+t1 = (1,2,3)
+t2 = (6.7,9)
+t = t1+t2
+print(t)

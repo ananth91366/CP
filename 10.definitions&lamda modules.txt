@@ -1,0 +1,248 @@
+def cals(a,b):
+    print("sum is :",a+b)  poistional
+    print("sub is : ",a-b)
+
+cals(20,10)
+print("-----------")
+cals(10,20)
+
+def emp(eid,ename,esal):
+    print("emp id is : ",eid)        keyword
+    print("emp name is : ",ename)
+    print("emp sal is :",esal)
+
+emp(esal=125000,ename="xyz",eid=111)
+
+def person(pname,pid=123):        default
+    print("pid is : ",pid)
+    print("pname is : ",pname)
+ 
+person("xyz")
+print("-------- -------")
+person(pid=111,pname="xyz")
+
+
+def fun(*n):
+    tot = 1                             variable length
+    for x in n:
+        tot*=x
+    print(tot)
+
+
+fun()
+fun(10)
+fun(10,20,30)
+
+
+def add(a,b):
+    print("hi")
+    
+    return a+b
+
+
+res = add(30,40)
+print(res)
+print(add(10,20))
+
+'''
+
+def outer():
+
+    def inner():
+        print("m from inner function")
+    inner()
+    print("m from outer function")
+outer()
+============================================
+
+ 1/12/2020
+
+lambda n1,n2,n3:(n1+n2+n3)
+
+res = lambda a,b:(a+b)
+#print(res(20,10))
+
+'''
+l = [1,2,3,4,5,6,7,8,9,10]
+print(list(filter(lambda x:x%2==0,l)))
+
+print(tuple(filter(lambda x:x%2!=0,l)))
+
+
+print(list(map(lambda x:x*2,l)))
+
+l = [1,2,3,4,5,6,7,8,9,10]
+
+from functools import reduce
+res = reduce(lambda x,y:x-y,l)
+print(res)
+
+
+import math
+print(math.ceil(5.3))
+print(math.floor(5.3))
+print(math.pow(3,4))
+print(math.factorial(5))
+
+import statistics
+l = [1,2,3,4,5,6,7,8,2,2,2,2,2,3,2,2,2]
+print(statistics.median(l))
+print(statistics.mean(l))
+print(statistics.mode(l))
+
+import random as r
+print(r.random())
+print(r.randint(1,9))
+l = [1,2,3,4,5]
+r.shuffle(l)
+print(l)
+print(r.choice([1,2,3,4,5]))
+
+import random as r
+
+def otpGen():
+    otp = ""
+    for x in range(6):
+        otp+=str(r.randint(1,9))
+    print(otp)
+otpGen()
+'''
+
+import string
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.digits)
+print(string.punctuation)
+
+=================================
+
+2/12/2020
+
+def fun():
+    pass
+
+def show():
+    print("hiii")
+show()
+
+
+def fun():
+    print("hi")
+    print("hello")
+
+fun()
+fun()
+
+def cals(a,b):
+    print("sum is :",a+b)
+    print("sub is : ",a-b)
+
+cals(20,10)
+print("-----------")
+cals(10,20)
+
+def emp(eid,ename,esal):
+    print("emp id is : ",eid)
+    print("emp name is : ",ename)
+    print("emp sal is :",esal)
+
+emp(esal=10,ename="xyz",eid=111)
+
+def person(pid=123,pname="abc"):
+    print("pid is : ",pid)
+    print("pname is : ",pname)
+
+person("abc")
+print("---------------")
+person(pid=111,pname="xyz")
+
+def fun(*n):
+    tot = 1
+    for x in n:
+        tot*=x
+    print(tot)
+
+
+fun()
+fun(10)
+fun(10,20,30)
+fun(40)
+fun(40,0.5,30)
+fun(10,40,8,9)
+
+
+
+def add(a,b):
+    print("hi")
+
+    return a + b
+print()
+
+res = add(30,40)
+print(res)
+print(add(10,20))
+
+def outer():
+
+    def inner():
+        print("m from inner function")
+    inner()
+    print("m from outer function")
+outer()
+
+def outer():
+    print("armstrong")
+    def inner():
+        print("palindrome")
+    inner()
+outer()
+
+import random as r
+
+
+def otpGen():
+    otp = ""
+    for x in range(6):
+        otp+=str(r.randint(1,9))
+    print(otp)
+otpGen()
+
+
+import random as r
+import string
+def passwordgen():
+    passwordgen = ""
+    for x in range(6):
+        temp1 = r.choice(string.digits)
+        temp2 = r.choice(string.ascii_letters)
+        temp3 =  r.choice(string.punctuation)
+        temp = temp1+temp2+temp3
+        passwordgen+=(r.choice(temp))
+    print(passwordgen)
+passwordgen()
+
+--------
+def add(a,b):
+    print("sum is : ",a+b)
+     print("sub is : ",a-b)
+    print("mul is : ",a*b)
+
+
+def show():
+    print("m from show method")
+
+def display():
+    print("m from display method")
+
+sample.py
+---------
+
+from demo import *
+
+add(12,13)
+print("--------")
+add(20,10)
+
+show()
+display()

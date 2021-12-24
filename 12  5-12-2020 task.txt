@@ -1,0 +1,257 @@
+1) How to remove the duplicate elements from the list? given
+one example?
+
+
+2)Write a Python function that takes two lists and returns True if they have at least one common member?
+
+3)Write a Python program to convert a list of characters into a string?
+
+4)
+Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are square of keys?
+
+5)Write a Python program to map two lists into a dictionary?
+
+6)
+ Write a Python program which iterates the integers from 1 to 50. For multiples of three
+ print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+For numbers which are multiples of both three and five print "FizzBuzz".
+Sample Output :
+fizzbuzz
+1
+2
+fizz
+4
+buzz
+
+7) what is the difference b/w list and set?
+8) what is the difference b/w remove nd discard in set?
+9) what is dictionary?explain dictionary methods?
+  
+10)
+
+You are required to implement the following Function 
+def LargeSmallSum(arr)
+The function accepts an integers arr of size ’length’ as its arguments you are required to return the sum of second largest largest element from the even positions and second smallest from the odd position of given ‘arr’
+Assumption:
+•	All array elements are unique
+•	Treat the 0th position a seven
+NOTE
+•	Return 0 if array is empty
+•	Return 0, if array length is 3 or less than 3
+Example
+Input
+arr:3 2 1 7 5 4
+Output
+7
+Explanation
+•	Second largest among even position elements(1 3 5) is 3
+•	Second largest among odd position element is 4
+•	Thus output is 3+4 = 7
+Sample Input
+arr:1 8 0 2 3 5 6
+Sample Output
+8
+=========================================================================
+ answers
+
+
+
+6)for x in range (1,51):
+    if (x%3==0 and x%5==0):
+        print("FizzBuzz")
+    elif(x%3==0):
+        print("Fizz")
+    elif(x%5==0):
+        print("Buzz")
+    else:
+        print(x)
+====================================================================
+1)l = [1,2,2,2,3,4,2,5,2,6,2,7,8]
+l1 = []
+for x in l:
+    if (x!=2):
+        l1.append(x)
+        print(l1)
+==============================================================
+4)d = {1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:10,11:11,12:12,13:13,14:14,15:15}
+for x,y in d.items():
+    y =x*2
+    d[x]=y
+print(d)
+======================================================================================
+ 5)l1 = [1,2,3,4,5]
+l2 = [6,7,8,9,1]
+print(dict(zip(l1,l2)))
+=====================================================================================
+3)l= [2,0,2,0]
+a = (str(x)for x in l)
+y = "".join(a)
+print(y)
+print(type(y))
+====================================================================================
+2)l1 = [1,2,3,4,5]
+l2 = [1,6,7,8,9]
+if(l1[0]==l2[0]):
+    print("true")
+else:
+    print("false")
+============================================================================
+for x in range (1,51):
+    if (x%3==0 and x%5==0):
+        print("FizzBuzz")
+    elif(x%3==0):
+        print("Fizz")
+    elif(x%5==0):
+        print("Buzz")
+    else:
+        print(x)
+
+l = [1,2,2,2,3,4,2,5,2,6,2,7,8]
+print(list(set(l)))
+
+d = {}
+for x in range(1,16):
+    y =x*2
+    d[x] = y
+print(d)
+
+l1 = [1,2,3,4,5]
+l2 = [6,7,8,9,1]
+print(dict(zip(l1,l2)))
+
+l= [2,0,2,0]
+a = (str (x)for x in l)
+y = "".join(a)
+print(y)
+print(type(y))
+
+l = [1,[2,3],4,[5,6,7],8,9,6,10]
+res = any(isinstance(x, list)for x in l)
+
+print("list contain nested list : " + str(res))
+
+l = [5, 20, 15, 20, 25, 50, 20]
+print(list(set(l)))
+l1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+l2 = ["h", "i", "j"]
+
+l1[2][1][2].extend(l2)
+print(l1)
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+list1[2][2].append(7000)
+print(list1)
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+resList = list(filter(None, list1))
+print(resList)
+
+list1 = [10, 20, 30, 40]
+list2 = [100, 200, 300, 400]
+
+for x, y in zip(list1, list2[::-1]):
+    print(x, y)
+    list1 = ["Hello ", "take "]
+    list2 = ["Dear", "Sir"]
+
+    resList = [x + y for x in list1 for y in list2]
+    print(resList)
+aList = [1, 2, 3, 4, 5, 6, 7]
+aList =  [x * x for x in aList]
+print(aList)
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+list3 = [i + j for i, j in zip(list1, list2)]
+print(list3)
+
+l = [1,2,3,4,5]
+print(l[:])
+print(l[:-3])
+print(l[::-1])
+print(l[::-2])
+
+l = [[1],[2],[3,4],[5]]
+l1 = []
+
+for x in l:
+    for y in x:
+        l1.append(y)
+
+print(l1)
+
+l = [12,34,45]
+
+l1 = []
+for x in l:
+    y = str(x)[::-1]
+    l1.append(int(y))
+print(l1)
+
+l = [[1],[2],[3,4],[5]]
+l1 = []
+for x in l:
+    for y in x:
+        l1.append(y)
+print(l1)
+
+l = [42,343,645]
+
+l1 = []
+for x in l:
+    y = str(x)[::-1]
+    l1.append(int(y))
+print(l1)
+
+l = [[1],[2],[3,4],[5]]
+l1 = []
+for x in l:
+    for y in x:
+        l1.append(y)
+print(l1)
+
+l = [[1],[2],[3,4],[5]]
+l1 = []
+for x in l:
+    for y in x:
+        l1.append(y)
+        print('l1')
+
+l = [1,2,3,4,5,6,7,8]
+l1 = []
+for x in l:
+    if(x%2==0):
+
+        l1.append(x)
+print(l1)
+
+l = [1,2,[3,4],5,[6,7],8,9]
+l1 = []
+for x in l:
+    if isinstance(x,list):
+        l1.extend(x)
+        print(l1)
+    else:
+        l1.append(x)
+        print(l1)
+
+l = [1,2,3,2,2,4,2,5,5,5,5,6,6,7,7,8,8,99,4,4,4]
+l1 = []
+for x in l:
+    if x not in l1:
+
+        l1.append(x)
+print(l1)
+
+l = [1,2,2,2,3,4,2,5,2,6,2,7,8]
+l1 = []
+for x in l:
+    if(x!=2):
+        l1.append(x)
+print(l1)
+
+
+l = [[1,2],[3,4],[5],[6,7],[8]]
+l1 =[]
+
+for x in l:
+    for y in x:
+        l1.append(y)
+print(l1)

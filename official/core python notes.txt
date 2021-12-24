@@ -1,0 +1,1612 @@
+core notes:
+------------
+
+Variables :
+-----------
+a  = 10.5
+print(a)
+print(type(a))
+
+print("-----------------")
+
+
+s = "hyd"
+print(type(s))
+
+
+print("hiiiii")
+
+s = 'true'
+print(type(s))
+
+s1 = True
+print(type(s1))
+
+#A = 10
+
+#print(A)
+
+a = 10
+print(a)
+
+f = 10
+print(f)
+
+
+a = input("Enter a number: ")
+print(a)
+print(type(a))
+
+print("-------------------")
+
+a = int(input("Enter a number: "))
+print(a)
+print(type(a))
+
+a = input("Enter a number: ")
+print("value is",a)
+print(type(a))
+print("==============")
+
+a = float(input("Enter a number: "))
+print(a)
+print(type(a))
+
+operators:
+----------
+Arithametic :
+-------------
+
+a = 10
+b = 3
+
+print("sum is ",a+b)
+print("sub is ",a-b)
+print("mul is ",a*b)
+print("div is ",a/b) #  decimal points
+print("floor div is ",a//b) # round figure value
+print("modules div is ",a%b)  # remainder value
+
+Assignment operator:
+---------------------
+
+a = 5
+print("the given a value is :",a) # 5
+a+=10
+print("after adding the a value:",a)  # a = 5+10 =>15
+a*=5
+print("after mul is :",a) #15*5 = 75
+a//=5
+print("after floor division :",a)
+
+Realtional operator :
+----------------------
+
+a = int(input("Enter a value :"))
+b = int(input("Enter b value : "))
+print(a>b) #10>12 =>F
+print(a<b) #10<12 =>T
+print(a>=b) #10>=12 =>F
+print(a<=b) #10<=12 =>T
+print(a==b) #10==12 => F
+print(a!=b) 
+
+Logical operator:
+-----------------
+
+x = 3
+
+print(x>2 and x<4) #T #3>2 and 3<4
+print(x<2 and x<4) #F #3<2 and 3<4
+print(x>2 and x>4)#F
+print(x<2 and x>4)#F                          both will be true then only it's true
+
+
+print("--------------")
+x = 3
+
+print(x>2 or x<4)  #T
+print(x<2 or x<4)  #T
+print(x>2 or x>4)  #T
+print(x<2 or x>4)  # F                       both will be false then only it will false
+
+
+
+x = 3
+
+print(x>2 and x<4)
+
+print(not(x>2 and x<4))
+
+Bitwise operator:
+-----------------
+print(5&7)
+print(5|7)
+print(10>>2)
+print(10<<2)
+
+Membership operator
+--------------------
+
+x = "python"
+
+print('y' in x)
+print('s' in x)
+
+print("--------------")
+
+print('y' not in x)
+print('s' not in x)
+
+Identity operator :
+-------------------
+a = 10
+print(id(a))
+b = 10
+print(id(b))
+
+print(a is b)
+
+print("-----------------")
+
+a = 10
+print(id(a))
+b = 20
+print(id(b))
+
+print(a is b)
+
+print("---------------")
+
+a = 10
+print(id(a))
+b = 10
+print(id(b))
+
+print(a is not b)
+
+print("-----------------")
+
+a = 10
+print(id(a))
+b = 20
+print(id(b))
+
+print(a is not b)
+
+st = "iam learning python"
+
+print("python" in st)
+print("java" in st)
+
+
+conditional statements:
+------------------------
+
+If :
+----
+
+age = int(input("Enter age "))
+if(age>18): #25>18 16>18
+    print("valid")
+
+else:
+    print("Invalid")
+
+age = int(input("Enter age :"))
+
+if(age<18): # 38<18
+    print("Teenage")
+
+elif(age>18 and age<35):  # 38>18 and 38<35
+    print("middle age")
+else:
+    print("old age")
+
+
+a = int(input("Enter a value : ")) # 10  6
+b = int(input("Enter b value : ")) # 6  10
+
+if(a>b): #10>6   6>10
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+
+elif:
+--------
+
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+c = int(input("Enter c value : "))
+
+if(a>b and a>c):
+    print("a is big")
+elif(b>a and b>c):
+    print("b is big")
+else:
+    print("c is big")
+
+Nested If:
+----------
+a = int(input("Enter a value : "))  # 8
+b = int(input("Enter b value :"))  # 10
+
+if(a>=b): # 10>=10 8>=10
+    if(a==b): # 10==10
+        print("both are equal")
+    else:
+        print("both are not equal")
+
+else:
+    print("a is less then b")
+
+loops:
+--------
+
+for i in range(10):
+    print(i,end=" ")
+print()
+for i in range(1,10):
+    print(i,end="#")
+
+print()
+for i in range(3,10,2):
+    print(i,end=" ")
+ 
+for i in range(1,11):
+    if i == 6:  # 1 == 6 ------ 6 == 6
+        break
+    print(i)
+ 
+
+for i in range(1,11):
+    if i == 6:  # 1 == 6 ------ 6 == 6
+        continue
+    print(i)
+
+While loop:
+------------
+
+i = 1 # start position
+
+while(i<10):  # 1<=10
+    print(i)
+    i = i+2
+
+
+for i in range(1,21):
+    if i%2!=0:
+        print(i)
+
+for i in range(1,31):
+    if (i%5 == 0) and (i%3==0):
+        print(i)
+
+print(chr(65))
+
+print(chr(97))
+
+
+x = "B"
+print(ord(x))
+
+a = "A"
+b = "a"
+print(a>b)  # 65>97
+
+
+s = "python"
+s1 = "pYthon"
+print(s>s1)  # 121>89
+
+print(ord('y'))
+print(ord('Y'))
+
+
+collections:
+------------
+
+list:
+-----
+
+'''
+l = [1,12.5,'c',"python",True]
+print(l)
+'''
+'''
+l = [1,2,3,4,5,1,1,1,4]
+print(l)
+'''
+'''
+l = [1,2,3,4,5]
+print(len(l))
+
+
+l = [1,2,3,4,5]
+print(l[2])
+'''
+
+'''
+for x in l:
+    print(x)
+'''
+
+'''
+l = [10,25.6,'python',5,"Rahul",76,"hyd"]
+print(l[4])
+
+print(l[2:6])
+print(l[1:7:2])
+
+
+
+l = [1,2,3,4,5,6,7,8,9,10,11,2,3,4,5,6,7,'p','r']
+print(l[:6])
+
+
+
+l = [1,2,3,4,5,6,7,8,9,10]
+
+print(l[-9:-2])
+print(l[-9:-2:2])
+print(l[-9:-1])
+print(l[-9:-1:3])
+'''
+#print(l[-2])
+#print(l[:-2])
+
+
+'''
+l = [1,2,3,4,5]
+print(l)
+print("----------------")
+l.append("python")
+print(l)
+
+l = [1,2,3,4]
+l2 = [5,"python","hyd"]
+
+l.extend(l2)
+print(l)
+
+'''
+'''
+l = [1,2,3,4,5]
+print(l)
+
+l[2]=100
+print(l)
+'''
+'''
+l = [1,2,3,4,5]
+print(l)
+l.insert(3,"Rahul")
+print(l)
+
+
+l = [1,2,3,4,5,"p"]
+print(l)
+#l.pop()
+#print(l)
+l.remove(3)
+print(l)
+
+'''
+
+#l = [1,2,3,4,5,3,4,5,3]
+#l.remove(3)
+#print(l)
+
+'''
+l = [9,1,6,2,8,3,5,7,4]
+l.sort()
+print(l)
+
+l = [1,2,3,4,5]
+l.reverse()
+print(l)
+
+l = [9,1,6,2,8,3,5,7,4]
+l.sort(reverse=True)
+print(l)
+'''
+'''
+l = [1,2,3,4,5]
+print(l)
+l.clear()
+print(l)
+
+l = [1,2,3,4]
+del l
+print(l)
+'''
+
+'''
+l = [1,2,3,4,5,6,3,3,4]
+l1 = [] # empty list
+
+for x in l:                                                 duplicate removal
+    if x not in l1:  # 3 not in l1
+        l1.append(x)  # [1,2,3,4,5,6]
+print(l1)
+
+l = [1,2,3,[4,5],6,7,8]
+
+print(l[3][1])
+
+a = [1,2,3,[4,5,6,7],8,9,[10,11,12],14]
+print(a[6][1])
+
+'''
+
+#l = ["hello" , "take"]
+#l1 = ["dear","sir"]
+#print(l[0]+" " +l1[0])
+
+'''
+l = [1,2,3,4]
+l.insert(1,[1,2,34])
+print(l)
+
+l = [1,2,3,4,5]
+l[2] = [1,2]
+print(l)
+'''
+
+'''
+l = ["hello","hi"]
+l1 = ["sir","madam"]
+
+for x in l:
+    for y in l1:
+        print(x+' '+y)
+
+for x in range(1,6):
+    for y in range(1,x+1):
+        print(chr(64+x),end=" ")
+    print()
+
+print("------------------")
+
+for x in range(1,6):
+    for y in range(1,x+1):
+        print(chr(64+y),end=" ")
+    print()
+'''
+'''
+print("============")
+list = [ [ ] ] * 5
+print(list)  # output?
+list[0].append(10)
+print(list)  # output?
+list[1].append(20)
+print(list)  # output?
+list.append(30)
+print(list) # output?
+
+l = ['aaaa','aaaaaa','aa','a','abcd','aaa']
+
+for x in l:
+    if len(x)>3:
+        print(x)
+
+
+l=[
+    ['01/02/1994','south africa','notout','112'],
+    ['03/02/1994','England','out','60'],
+    ['10/02/1994','south africa','out','40'],
+    ['10/03/1994','south africa','runout','50'],
+    ['20/03/1994','south africa','out','50'],
+    ['30/02/1994','England','out','68'],
+    ['03/04/1994','England','out','48'],
+    ['23/02/1994','WI','out','60'],
+    ]
+
+tot = 0 #int
+for x in l:
+    if x[1] == "south africa":
+        tot +=int(x[3])
+print(tot)
+
+'''
+
+'''
+l = [[1],[2],[3]]
+l1 = []
+
+for x in l:
+    for y in x:
+        l1.append(y)
+print(l1)
+'''
+
+'''
+l = [1, 2, [3, 4, [5, 6]], 7, 8, [9, [10]]]
+
+output = []
+
+# function used for removing nested
+# lists in python.
+def reemovNestings(l):
+    for i in l:
+        if type(i) == list:
+            reemovNestings(i)
+        else:
+            output.append(i)
+
+
+print('The original list: ', l)
+reemovNestings(l)
+print('The list after removing nesting: ', output) 
+
+
+======================
+Tuple examples:
+---------------
+
+'''
+t = (1,2.2,"python",'c')
+print(t)
+print(type(t))
+print("-----------")
+t1 = (1,2,3,1,1,"python")
+print(t1)
+print(type(t1))
+'''
+
+#t = (1,2,3,4,2,2,2,3,4,2,2,2,1)
+#print(t[1])
+#print(len(t))
+#print(t.count(2))
+
+'''
+t = (1,2,3,4)
+for x in t:
+    print(x,end=" ")
+'''
+
+'''
+l = [1,2,3,4,5]
+l1 = []   # [5,4,3,2,1]
+
+while l:
+    x = l.pop()
+    l1.append(x)
+print(l1)
+
+t = (1,9,2,8,3,7,4,6,5)
+print(sorted(t))
+'''
+
+l = [5,2,4,1,3]
+print(sorted(l))
+
+
+set examples
+-------------
+
+#s = {1,2,3,4,1,1,5}
+#print(s)
+
+'''
+s = {1,2,3,4}
+print(s)
+s.add("python")
+print(s)
+s.add("hyd")
+print(s)
+
+
+s = {1,2,3,4}
+s1 = {"a","b",5}
+
+s.update(s1)
+print(s)
+
+
+s = {1,2,3,4}
+s.pop()
+print(s)
+
+
+
+s = {1,2,3,4}
+print(s)
+s.remove(3)
+print(s)
+s.remove(3)
+print(s)
+
+s = {1,2,3,4}
+s.discard(3)
+print(s)
+s.discard(3)
+print(s)
+
+s = {1,2,3,4}
+s1 = {3,4,5,6}
+print(s.union(s1))
+print(s.intersection(s1))
+print(s.difference(s1))
+print(s1.difference(s))
+
+
+s = {1,2,3,4}
+s1 = {2,3}
+print(s.issuperset(s1))
+print(s1.issuperset(s))
+print(s1.issubset(s))
+print(s.issubset(s1))
+
+
+#x = {"apple","banana","cherry","google"}
+#y = {"google","apple","microsoft"}
+
+
+y.difference_update(x)
+print(y)
+
+print("------------")
+print(x.difference_update(y))
+x.difference(y)
+print(x)
+
+
+
+#l = ["hello","hi","hlao"]
+#l1 = ["sir","madam","student"]
+
+
+l = [1,2,3,4,5]
+l[2] = [6,7]
+print(l)
+l[2][1] = 25
+print(l)
+
+l = [1,2,3,4,5]
+l1 = []
+for x in l:
+    s = x*2
+    l1.append(s)
+print(l1)
+
+
+l = {1,2,3,4,5}
+print(list(x**3 for x in l)) # list comprensions
+
+l = [1,2,3,4,3,3,2]
+
+print(tuple(set(l)))
+
+Dictionary Example:
+--------------------
+
+'''
+d = {1:"a",2:3,4:5}
+print(d)
+d[6] = "python"
+print(d)
+d[2] = 33
+print(d)
+
+print(d)
+print(d[1])
+
+
+for x in d.keys():
+    print(x)
+
+print("------------")
+
+for x in d.values():
+    print(x)
+
+print("--------------")
+
+for x in d.items():
+    print(x)
+
+d = {1:2,3:4,5:6}
+print(d)
+d.popitem()
+print(d)
+d.pop(1)
+print(d)
+
+d = {1:2,3:4,5:6}
+d1 = {}
+
+for x,y in d.items():
+    d1[x] = y*2   # d1[1] = 2*2
+
+print(d1)
+
+print("-------------------")
+
+print(dict((x,y*2) for x,y in d.items()))
+
+
+d = {
+
+    "a":{"sno":123,"name":"xyz"},
+    "b":{"sno1":124,"name1":"abc"}
+}
+
+for x in d.values():
+    for y in x.values():
+        print(y)
+
+
+==============
+
+string examples:
+---------------
+
+s = "python"
+print(s[1])
+print(s[1:4])
+'''
+'''
+s = "05/11/2020"
+print(s[6:])
+print(s[:2])
+'''
+
+s = "iam learning python"
+
+for x in s.split():
+    print(x)
+
+
+function examples:
+------------------
+
+#function is a collection of statements which is used to perform some opertions
+
+# function is defined with def keyword
+
+# code reusing is the main purpose
+
+'''
+def test():
+    print("it is function")
+test()
+test()
+test()
+test()
+
+
+def test1(idno,name):
+    print("idno is:",idno)
+    print("name is:",name)
+test1(100,"xyz")
+
+# function are divied 4 tupes
+
+#1) positional aruguments
+#2) keyword aruguments
+#3) default aruguments
+#4)variable lenght arguments
+
+print("positional arguments")
+
+def show(a,b):
+   # print("the sum is:",(a+b))
+    print("the sub is:",(a-b))
+show(10,20)
+show(20,10)
+
+print("keyword arguments")
+def display(idno,name,age):
+    print("idno is:",idno)
+    print("name is",name)
+    print("age :",age)
+display(idno=101,age=25,name="abc")
+
+print("default aruguments")
+
+def fun(name,idno=101):
+    print("name is:",name)
+    print("idno is :",idno)
+fun(name="abc",idno=111)
+
+print("variable length aruguments")
+
+def fun1(*n):
+    tot = 0
+    for x in n:
+        tot = tot+x
+    print(tot)
+fun1()
+fun1(10)
+fun1(10,20)
+fun1(10,20,30)
+fun1(122,120,125,1256)
+
+def one():
+    print("I am from one method")
+    two()
+def two():
+    print("I am from two method ")
+    three()
+def three():
+    print("Iam from third method")
+
+one()
+'''
+'''
+n = int(input("Enter a no:"))
+
+for x in range(1,11):
+    print(n,"*",x,'=',n*x)
+'''
+'''
+def add_five(x):
+    return x+5
+nums = [11,22,33,44,55]
+
+res = list(map(add_five,nums))
+print(res)
+'''
+'''
+def make_word():
+    word = ""
+    for w in "krishna":
+        word+=w
+        yield word
+res = list(make_word())
+print(res)
+
+print("----------------------")
+def make_word():
+    word = ""
+    for w in "krishna":
+        word+=w
+    return word
+print(list(make_word()))
+
+
+def demo():
+    word = ""
+    for x in "sai":
+        word+=x
+        yield word
+res = set(demo())
+print(res)
+
+def user(names):
+    for name in names:
+        print("Hello", "==", name)
+user_names = ["abc","xyz","pqr"]
+user(user_names)
+'''
+'''
+def get_format_name(fname,lname):
+    full_name = fname+"--"+lname
+    return full_name
+
+d = {
+    "a":get_format_name("s","k"),
+    "b":get_format_name("a","b")
+}
+
+print(d["a"])
+print(d["b"])
+'''
+'''
+def dict_fun(sid ,rollno):
+    val = sid+"--"+rollno
+    return val.upper()
+d = {
+    "a":dict_fun("111","xyz"),
+    "b":dict_fun("222","abc")
+}
+print(d["a"])
+print(d["b"])
+
+
+a = 30
+def fun():
+    global a
+    print(a)
+    a =20
+    print(a)
+fun()
+print(a)
+
+
+================
+
+lambda functions:
+------------------
+
+x = lambda n1,n2:(n1+n2)
+print(x(10,20))
+
+l = [1,2,3,4,5,6,7,8,9,10]
+res = list(filter(lambda x:x%2==0,l))
+print(res)
+
+l = [1,2,3,4,5,6,7,8,9,10]
+res = list(map(lambda no:no**2,l))
+print(res)
+
+from functools import reduce
+l = [10,20,30,40,50,60,70,80,90,100]
+res = reduce(lambda n1,n2:(n1+n2),l)
+print(res)
+
+======================
+
+example Programs
+----------------
+
+st = input("Enter a word:")
+if st == st[::-1]:
+    print("palindrome..")
+else:
+    print("nnot a palindrome")
+'''
+'''
+st = "iam learning python madam aba abc aba mom dad"
+l = []
+for word in st.split():
+    if word == word[::-1]:
+        l.append(word)
+print(l)
+'''
+'''
+st = "iam learning python and iam leaving in hyd hyd hyd iam hyd"
+word = {}
+l = []
+for word in st.split():
+    if word == word[::-1]:
+        l.append(word)
+print(l)
+for x in st.split():
+    if x not in word:
+        word[x] = 1
+    else:
+        word[x] = word[x]+1
+print(word)
+'''
+'''
+d = {1:'a',2:'b'}
+#print(d)
+d[3]="c"
+print(d)
+d[2]="python"
+print(d)
+'''
+'''
+st = "iam learning python madam aba abc aba mom dad"
+l = []
+for word in st.split():
+    if word == word[::-1]:
+        l.append(word)
+print(l)
+print("--------------------")
+count = {}
+for x in l:
+    if x not in count:
+        count[x]=1
+    else:
+        count[x]+=1
+print(count)
+'''
+'''
+def get_name(fname,lname):
+    full_name = fname+"--"+lname
+    return full_name.title()
+
+res = get_name("xyz","abc")
+print(res)
+'''
+'''
+def getname(names):
+    for name in names:
+        print("hello"+"-"+name.title())
+
+l = ["abc","xyz","pqr"]
+getname(l)
+
+====================
+
+modules:
+-----------
+
+Built-in modules:
+----------------
+
+import math
+print(math.pow(2,3))
+print(math.ceil(5.2))
+print(math.floor(5.8))
+print(math.factorial(5))
+
+l = [1,2,3,4,5]
+import statistics
+print(statistics.mean(l))
+
+l = [1,2,3,4,5,6,7,8,9]
+import statistics
+print(statistics.median(l))
+
+print("-----------------")
+l = [1,2,3,4,5,6,7,8,9,10,11,12]
+import statistics
+print(statistics.median(l))
+
+l = [1,2,3,4,5,6,1,2,3,4,5,4,4]
+import statistics
+print(statistics.mode(l))
+
+import random as r
+print(r.random())
+print(r.randint(1,12))
+
+l = [1,2,3,4,5]
+import random
+random.shuffle(l)
+print(l)
+
+import string
+print(string.punctuation)
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.hexdigits)
+
+'''
+
+'''
+import random as r
+def otpgen():
+    otp = ""  # 53
+    for i in range(4):
+        otp +=str(r.randint(1,9))  # 5 3
+    print(otp)
+    #print("otp is : ")
+otpgen()
+'''
+
+
+import string
+import random
+'''
+def pw_gen(size=6,char = string.ascii_letters+string.punctuation+string.digits):
+    return  ''.join(random.choice(char) for x in range(size))
+#n = int(input("Enter d size : "))
+print(pw_gen())
+
+def pdwGen():
+    pwd = ""
+    char = string.ascii_letters+string.punctuation+string.digits
+    for x in range(4):
+        pwd+=random.choice(char)
+    print(pwd)
+
+pdwGen()
+
+custom modules:
+---------------
+test.py
+-------
+
+def cals(a,b):
+    print("sum is : ",a+b)
+    print("sub is : ",a-b)
+    print("mul is : ",a*b)
+
+
+def show():
+    print("stay home")
+
+def div(a,b):
+    print("div is : ",a//b)
+
+testcase.py
+-----------
+
+from test import *
+
+show()
+div(20,10)
+
+Exception handling:
+--------------------
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+
+print("sum is : ",a+b) # 10+0 =10
+try:
+    print("div is : ",a/b)
+    print("mul is : ",a*b) #10*0 =0
+except ZeroDivisionError:
+    print("can't divided by zero")
+
+try:
+    x = int(input("Enter a no:"))
+    y = int(input("Enter a no:"))
+    print(x/y)
+except ZeroDivisionError:
+    print("can't Divided By Zero..")
+except ValueError:
+    print("please Provide int value only..")
+else:
+    print("Thank you")
+
+'''
+try:
+    x = int(input("Enter a no:"))
+    y = int(input("Enter a no:"))
+    print("sum:",(x+y))
+    try:
+        print("div is:",(x/y))
+    except ZeroDivisionError:
+        print("can't divided by zero")
+    print("sub is:",(x-y))
+except ValueError:
+    print("please provide int value..")
+else:
+    print("Thanks")
+
+-----------------
+
+File examples:
+--------------
+
+with open("demo.txt","w") as file:
+    file.write("i am learning python")
+
+print("file is created")
+
+with open("demo.txt","r") as file:
+    print(file.read())
+
+
+with open("demo.txt","a") as f:
+    f.write("\n todays topic file handling")
+
+
+try:
+    file = input("ENter file name : ")
+    with open(file) as f:
+        print(f.readlines())
+except FileNotFoundError:
+    print("file not found!!!")
+
+2nd way:
+---------
+
+f = open("sample.txt","w")
+f.write("hyd is capital of Tg")
+f.close()
+
+f = open("sample.txt","w")
+f.write("hello")
+f.write("hiii")
+f.write("\n stay home")
+f.close()
+
+f = open("sample.txt")
+print(f.read())
+
+========================
+
+examples
+--------
+
+st = "Iam Living in hyderabad"
+count = 0
+for x in st.split():
+    count +=1
+print("Number of words in a file:",count)
+'''
+'''
+
+
+st = "Iam Living in hyderabad Iam learning python at inspanner"
+count = {}
+for x in st.split():
+    if x not in count:
+        count[x] = 1
+    else:
+        count[x] +=1   # count = count+1
+print(count)
+'''
+
+st = "iam living in hyderabad love mom aba cac mom aba "
+l = []
+for word in st.split():
+    if word == word[::-1]:
+        l.append(word)
+print(l)
+print("=====================")
+count = {}
+for x in l:
+    if x not in count:
+        count[x] = 1
+    else:
+        count[x]+=1
+print(count)
+
+'''
+s = 2012
+res = [int(x) for x in str(s)]
+print(res)
+'''
+
+'''
+print("String to list")
+st = "hyderabad"
+print(list(st))
+
+
+print("list to string..")
+l = ['h','y','d','e','r','a','b','a','d']
+res = "".join(l)
+print(res)
+'''
+'''
+l = [1,2,3,4]
+for x in l:
+    print(x,end="")
+
+'''
+# palindrome number
+'''
+num=int(input("Enter a number:"))
+temp=num
+rev=0
+while(num>0):
+    dig=num%10
+    rev=rev*10+dig
+    num=num//10
+if(temp==rev):
+    print("The number is palindrome!")
+else:
+    print("Not a palindrome!")
+
+'''
+'''
+num = int(input("Enter a number: "))
+# initialize sum
+sum = 0
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+'''
+'''
+num = int(input("Enter a no:"))
+sum = 0
+for x in str(num):
+    sum +=int(x)
+print(sum)
+'''
+
+'''
+l1 = [1,2,3,4]
+print(sum(l1))
+'''
+'''
+x = "hyderbad"
+print(x.isalpha())
+y = "hyd123"
+print(y.isalnum())
+#print("10.5".isdecimal())
+'''
+'''
+l = "hyd"
+print(l.upper())
+a = "hYDERABAD"
+print(a.lower())
+'''
+'''
+while True:
+    age = input("Enter your age:")
+    if age.isdecimal():
+        break
+    else:
+        print("please enter a no for your age")
+'''
+'''
+while True:
+    password = input("enter a password(letters and numbers only:")
+    if password.isalnum():
+        print("thanks",password)
+        break
+    print("password can only have letters and numbers")
+'''
+
+#print("".join(['1','2','3','4']))
+
+#print("hello".rjust(10))
+#print("hello".rjust(40))
+#print("hi".rjust(10,'*'))
+'''
+def prime_n(n):
+    prime = True
+    for i in range(2,n):
+        if n%i == 0:
+            prime = False
+    return prime
+a = int(input("please enter  no:"))
+print(prime_n(a))
+'''
+'''
+x = "         hyd          "
+print(x)
+print(x.strip())
+print(x.rstrip())
+print(x.lstrip())
+'''
+'''
+def test(x):
+    return x**2 + 5*x +4
+print(test(-4))
+
+print((lambda x:x**2+5*x+4)(-4))
+'''
+'''
+def apply_ones(func,arg):
+    return func(arg)
+
+def add_five(x):
+    return x+5
+
+print(apply_ones(add_five,5))
+'''
+
+#x = "hyderabad"
+#print(x.upper())
+
+#x = "hyd"
+#print(x.rjust(10,'*'))
+#print(x.ljust(10,"@"))
+
+x = "abc"
+#print(x.isalpha())
+
+x = "abc123"
+#print(x.isalnum())
+
+x = "123abv"
+#print(x.isdecimal())
+
+'''
+num = int(input("Enter a num:"))
+if num>1:
+    for i in range(2,num):
+        if num%i == 0:
+            print("Not A prime number")
+            break
+    else:
+        print("Prime Number")
+else:
+    print("Not A prime No...")
+'''
+'''
+l = int(input("Enter lower range:"))
+u = int(input("Enter upper range:"))
+
+for n in range(l,u+1):
+    if n>1:
+        for i in range(2,n):
+            if(n%i) ==0:
+                break
+        else:
+            print(n)
+'''
+'''
+# fibbonacci series
+
+first = 1
+second = 2
+
+for i in range(1,20):
+    print(first)
+    new = first+second
+    first=second
+    second = new
+print("=========================")
+
+#n = int(input("Enter a no:"))
+first = 1
+second = 2
+for x in range(1,10):
+    print(first)
+
+    first = second
+    new = first + second
+    second = new
+'''
+'''
+first = 1
+second = 2
+while first<30:
+    print(first)
+    new = first+second
+    first = second
+    second = new
+'''
+'''
+d = {1:"a",2:"b"}
+d[3] = "s"
+print(d)
+'''
+'''
+st = "iam learning python at Inspanner"
+count = 0
+for x in st.split():
+    print(x)
+    count = count+1
+print(count)
+'''
+'''
+st = "iam learning python at Inspanner mom dad aba madam cac hyd wgl python machine learning mom dad"
+l = []
+count = 0
+for x in st.split():
+    if x == x[::-1]:
+        l.append(x)
+print(l)
+print("=======================")
+count = {}
+for x in l:
+    if x not in count:
+        count[x]= 1
+    else:
+        count[x]+=1
+print(x,count)
+'''
+'''
+st = "Iam  Living in hyderabad hyderabad hyderabad"
+count = {}
+for x in st.split():
+    if x not in count:
+        count[x] = 1
+    else:
+        count[x] +=1
+print(x,count)
+'''
+'''
+n = int(input("Enter a no:"))
+first = 0
+second = 1
+while(first<n):
+    print(first)
+    first = second
+    new = first+second
+    second = new
+'''
+'''
+st = "iam learning python at inspanner hyd hyd hdy "
+count = 0
+for word in st.split():
+    count=count+1
+print(count)
+'''
+'''
+
+num = int(input("Enter no:"))
+
+if num>0:
+    for x in range(2,num):
+        if num%x == 0:
+            print("prime no")
+        else:
+            print("not prime no")
+'''
+
+#for x in range(2,11):
+#    print(x*2)
+
+'''
+for x in range(1,6):
+    for y in range(1,x+1):
+        print(y,end=" ")
+    print()
+'''
+'''
+for x in range(1,6):
+    for y in range(1,x+1):
+        print(chr(64+x),end=" ")
+    print()
+'''
+'''
+x = "          Hello"
+print(x)
+print(x.lstrip())
+y = "hello          "
+print(y.rstrip())
+x = "Hi"
+print(x.rjust(10,'*'))
+'''
+'''
+l1 = [1,2,3]
+l2 = [4,5,6,7]
+l3 = [8,9,10]
+l4 = [11,12,13,14,15]
+
+for x in (l1,l2,l3,l4):
+    if len(x)<4:
+        print(sum(x))
+    else:
+        print(sum(x[2:]))
+'''
+'''
+n = int(input("Enter no:"))
+for x in range(1,n+1):
+    for y in range(1,x+1):
+        print(chr(96+x),end=" ")
+    print()
+'''
+'''
+st = "python"
+print('x' not in st)
+'''
+'''
+st = "iam learning python"
+word = input("Enter a word:")
+print(word in st )
+'''
+
+'''
+first = 1
+second = 2
+while first<30:
+    print(first)
+    new = first+second
+    first = second
+    second = new
+'''
+'''
+first = 1
+second = 2
+for x in range(1,11):
+    print(first)
+    new = first+second
+    first = second
+    second = new
+'''
+'''
+def exponent(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * exponent(x, n-1)
+
+res = exponent(4,3)
+print(res)
+'''
+'''
+def fast_exponent(x, n):
+    if n == 0:
+        return 1
+    elif n % 2 == 0:
+        return exponent(x*x, n/2)
+    else:
+        return x * exponent(x, n-1)
+res = fast_exponent(4,2)
+print(res)
+'''
+'''
+n = int(input("Enter howmany time do you want:"))
+d = {}
+for i in range(n):
+    item = input("Enter a no:")
+    price = int(input("Enter a no:"))
+    x = item
+    y = item*price
+    d[x] = y
+print(d)
+'''
+

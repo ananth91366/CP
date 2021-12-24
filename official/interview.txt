@@ -1,0 +1,823 @@
+
+>>Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost 
+any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and 
+automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+
+1) What is Python?
+
+Python was created by Guido van Rossum, and released in 1991.
+
+It is a general-purpose computer programming language. It is a high-level, object-oriented language which can run equally on different platforms
+ such as Windows, Linux, UNIX, and Macintosh. It is widely used in data science, machine learning and artificial intelligence domain.
+
+Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces 
+the cost of program maintenance. Moreover, the language is capable of scripting, completely open-source and supports third-party packages 
+encouraging modularity and code-reuse.
+Its high-level data structures, combined with dynamic typing and dynamic binding, attract a huge community of developers for Rapid Application
+ Development and deployment.
+
+Features:>
+Interpreted
+Free and open source
+Extensible
+Object-oriented
+Built-in data structure
+Readability
+High-Level Language
+Cross-platform
+
+Interpreted: Python is an interpreted language. It does not require prior compilation of code and executes instructions directly.
+                 any programming language which is not in machine-level code before runtime
+Free and open source: It is an open source project which is publicly available to reuse. It can be downloaded free of cost.
+Portable: Python programs can run on cross platforms without affecting its performance.
+Extensible: It is very flexible and extensible with any module.
+Object-oriented: Python allows to implement the Object Oriented concepts to build application solution.
+Built-in data structure: Tuple, List, and Dictionary are useful integrated data structures provided by the language.
+
+It is easy to learn and require less code to develop the applications.
+
+It is widely used for:
+
+Web development (server-side).
+Software development.
+Mathematics.
+System scripting.
+Web and Internet Development
+Games
+Scientific and computational applications
+Language development
+Image processing and graphic design applications
+Enterprise and business applications development
+Operating systems
+GUI based desktop applications
+
+WHY Python?
+
+Python is compatible with different platforms like Windows, Mac, Linux, Raspberry Pi, etc.
+Python has a simple syntax as compared to other languages.
+Python allows a developer to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, means that the code can be executed as soon as it is written. It helps to provide a prototype very quickly.
+Python can be described as a procedural way, an object-orientated way or a functional way.
+
+ key features of Python:>
+1)Python is an interpreted language. :no need to compile before run
+2)Python is dynamically typed, :you don’t need to state the types of variables when you declare them or anything like that. 
+ You can do things like x=111 and then x="I'm a string" without error
+3)Python is well suited to object orientated programming
+4)Writing Python code is quick, but running it is often slower than compiled languages. 
+
+Static - Data Types are checked before execution.
+Dynamic - Data Types are checked during execution
+
+Python is a programming language,Python is a CASE SENSITIVE language.(In simple words, it cares about the case – lowercase or uppercase.) 
+
+
+.PY&.PYC
+.py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program. 
+We get bytecode after compilation of .py file (source code). 
+.pyc files are not created for all the files that you run. It is only created for the files that you import.
+
+Before executing a python program python interpreter checks for the compiled files. If the file is present, the virtual machine executes it. 
+If not found, it checks for .py file. If found, compiles it to .pyc file and then python virtual machine executes it.
+Having .pyc file saves you the compilation time.
+
+PEP:
+Python Enhancement Proposal.PEP8 structure of a program
+
+MEMORY management in python is managed by Python private heap space.
+
+NAMESPACE:>A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+Local Namespace:> includes local names inside a function. the namespace is temporarily created for a function call and 
+                   gets cleared when the function returns.
+
+Global Namespace:>includes names from various imported packages/ modules that is being used in the current project. 
+                This namespace is created when the package is imported in the script and lasts until the execution of the script.
+
+Built-in Namespace:> includes built-in functions of core Python and built-in names for various types of exceptions.
+
+
+PYTHONPATH:>Whenever a module is imported, PYTHONPATH is also looked up to check for the presence of the imported modules in various directories.
+
+PYTHON MODULES:>Python modules are files containing Python code.
+               A Python module is a .py file containing executable code.
+               Some of the commonly used built-in modules are:
+os
+sys
+math
+random
+data time
+JSON
+
+
+
+Global Variables:>
+Variables declared outside a function or in global space are called global variables. These variables can be accessed by any function in the program.
+
+Local Variables:>
+Any variable declared inside a function is known as a local variable. This variable is present in the local space and not in the global space.
+
+Example:
+a=2
+def add():
+b=3
+c=a+b
+print(c)
+add()
+Output: 5
+When you try to access the local variable outside the function add(), it will throw an error.
+
+
+Global variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function,
+                 we use the global keyword.
+Protected attributes are attributes defined with a underscore prefixed to their identifier eg. _sara. 
+                    They can still be accessed and modified from outside the class they are defined in 
+                    but a responsible developer should refrain from doing so.
+Private attributes are attributes with double underscore prefixed to their identifier eg. __ansh. 
+                    They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made.
+
+
+A local scope refers to the local objects available in the current function.
+A global scope refers to the objects available throught the code execution since their inception.
+A module-level scope refers to the global objects of the current module accessible in the program.
+An outermost scope refers to all the built-in names callable in the program. The objects in this scope are searched last to find the name referenced
+
+
+TYPECASTING:
+ Type conversion refers to the conversion of one data type iinto another.
+
+int() – converts any data type into integer type
+
+float() – converts any data type into float type
+
+ord() – converts characters into integer
+
+hex() – converts integers to hexadecimal
+
+oct() – converts integer to octal
+
+tuple() – This function is used to convert to a tuple.
+
+set() – This function returns the type after converting to set.
+
+list() – This function is used to convert any data type to a list type.
+
+dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
+
+str() – Used to convert integer into a string.
+
+There are several built-in data types in Python.
+Python provides "type() and isinstance()" functions to check the type of these variables. 
+
+None Type :>Boolean equality operation can be performed using these NoneType objects.
+Class Name	Description
+NoneType	Represents the NULL values in Python
+
+Numeric Types:>
+There are three distint numeric types - integers, floating-point numbers, and complex numbers. Additionally, booleans are a sub-type of integers.
+Class Name	Description
+int	         Stores integer literals including hex, octal and binary numbers as integers
+float	         Stores literals containing decimal values and/or exponent sign as floating-point numbers
+complex	        Stores complex number in the form (A + Bj) and has attributes: real and imag
+bool	       Stores boolean value (True or False)
+
+
+Sequence Types:>
+According to Python Docs, there are three basic Sequence Types - lists, tuples, and range objects.
+ Sequence types have the in and not in operators defined for their traversing their elements. 
+ These operators share the same priority as the comparison operations.
+Class Name	Description
+list	       Mutable sequence used to store collection of items.
+tuple	       Immutable sequence used to store collection of items.
+range	       Represents an immutable sequence of numbers generated during execution.
+str	       Immutable sequence of Unicode code points to store textual data.
+
+
+Mapping Types:>
+A mapping object can map hashable values to random objects in Python. Mappings objects are mutable and there is currently only one standard mapping type,
+ the dictionary.
+Class Name	Description
+dict	        Stores comma-separated list of key: value pairs
+
+Set Types:>
+Currently, Python has two built-in set types - set and frozenset. set type is mutable and supports methods like add() and remove().
+                                                                  frozenset type is immutable and can't be modified after creation.
+Class Name	Description
+set	        Mutable unordered collection of distinct hashable objects
+frozenset	Immutable collection of distinct hashable objects
+
+Note: set is mutable and thus cannot be used as key for a dictionary.
+      frozenset is immutable and thus, hashable, and can be used as a dictionary key or as an element of another set.
+
+
+Modules:>
+Module is an additional built-in type supported by the Python Interpreter. It supports one special operation, 
+i.e., attribute access:
+
+Callable Types:>
+Callable types are the types to which function call can be applied. They can be user-defined functions, 
+                instance methods, generator functions, and some other built-in functions, methods and classes.
+
+
+Indentation:>
+Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc is specified within an indented block.
+ It is usually done using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well.
+
+Difference between Python Arrays and lists:>
+
+Arrays in python can only contain elements of same data types i.e., data type of array should be homogeneous.less memory
+Lists in python can contain elements of different data types i.e., data type of lists can be heterogeneous. 
+          It has the disadvantage of consuming large memory.
+
+Example:
+
+import array as arr
+My_Array=arr.array('i',[1,2,3,4])
+My_list=[1,'abc',1.20]
+print(My_Array)
+print(My_list)
+Output:
+
+array(‘i’, [1, 2, 3, 4]) [1, ‘abc’, 1.2]
+
+
+FUNCTIONS:>
+
+A function is a block of code which is executed only when it is called. To define a Python function, the "def" keyword is used.
+
+Built-In Functions:> copy(), len(), count() are the some built-in functions.
+
+User-defined Functions:> Functions which are defined by a user known as user-defined functions.
+
+Python zip() function returns a zip object, which maps a similar index of multiple containers.
+ It takes an iterable, convert into iterator and aggregates the elements based on iterables passed. It returns an iterator of tuples.
+
+zip(iterator1, iterator2, iterator3 ...)    
+Parameters
+
+iterator1, iterator2, iterator3: These are iterator objects that are joined together.
+
+
+Return:>
+It returns an iterator from two or more iterators.
+
+
+ __INIT__:>
+ __init__ is a method or constructor in Python. 
+     This method is automatically called to allocate memory when a new object/ instance of a class is created
+. All classes have the __init__ method.
+
+class Employee:
+def __init__(self, name, age,salary):
+self.name = name
+self.age = age
+self.salary = 20000
+E1 = Employee("XYZ", 23, 20000)
+# E1 is the instance of class Employee.
+#__init__ allocates memory for E1. 
+print(E1.name)
+print(E1.age)
+print(E1.salary)
+Output:
+
+XYZ
+23
+20000
+
+
+LAMBDA:>
+An anonymous function is known as a lambda function. that can accept any number of arguments, but can only have a single expression.
+ It is generally used in situations requiring an anonymous function for a short time period. 
+a = lambda x,y : x+y
+
+
+Self:>
+Self is an instance or an object of a class. In Python, this is explicitly included as the first parameter.
+It helps in disinguishing between the methods and attributes of a class from its local variables.
+
+BREAK:>
+Allows loop termination when some condition is met and the control is transferred to the next statement.
+
+CONTINUE:>
+Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
+
+PASS:>
+	Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation.
+ Nothing happens when this is executed.
+The pass keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code 
+which may execute during runtime but has yet to be written. Without the pass statement in the following code, 
+we may run into some errors during code execution.
+
+def myEmptyFunc():
+    # do nothing
+    pass
+
+myEmptyFunc()    # nothing happens
+
+## Without the pass keyword
+# File "<stdin>", line 3
+# IndentationError: expected an indented block
+
+ REVERSE [::-1] is used to reverse the order of an array or a sequence.
+
+RANDOM:>using SHUFFLE
+from random import shuffle
+x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
+shuffle(x)
+print(x)
+
+
+ITERATORS:>
+
+Iterators are objects which can be traversed though or iterated upon.
+
+Iterator is an object.
+It remembers its state i.e., where it is during iteration (see code below to see how)
+__iter__() method initializes an iterator.
+It has a __next__() method which returns the next item in iteration and points to the next element.
+ Upon reaching the end of iterable object __next__() must return StopIteration exception.
+It is also self iterable.
+Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.
+
+
+ Random module is the standard module that is used to generate a random number
+
+import random
+random.random
+
+
+
+LIST	                                          TUPLES
+Lists are mutable i.e they can be edited.	Tuples are immutable (tuples are lists which can’t be edited).
+Lists are slower than tuples.	             Tuples are faster than list.
+Syntax: list_1 = [10, ‘Chelsea’, 20]	     Syntax: tup_1 = (10, ‘Chelsea’ , 20)
+
+
+RANGE&XRANGE:>
+
+xrange() and range() are quite similar in terms of functionality. They both generate a sequence of integers, with the only difference that
+ range() returns a Python list, whereas, xrange() returns an xrange object.
+ It creates the values as you need them with a special technique called yielding.
+
+Comments in Python start with a # character.
+Comments in Python start with a """ character.
+
+PICKILING&UNPICKILING:>
+
+Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory.
+ 
+           The function used for the above process is pickle.dump().
+
+Unpickling
+Unpickling is the complete inverse of pickling. It deserializes the byte stream to recreate the objects stored in the file, 
+and loads the object to memory.
+           The function used for the above process is pickle.load().
+
+
+
+GENERATORS:>
+ Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators 
+with a different approach. They employ the use of yield keyword rather than return to return a generator object.
+
+capitalize() :>
+capitalizes the first letter of a string.
+
+To convert a string to lowercase, lower() function can be used.
+To convert a string to uppercase, upper() function can be used.
+
+It is a string's function which converts all uppercase characters into lowercase and vice versa. 
+
+string = "IT IS IN LOWERCASE."  
+print(string.swapcase())  
+  
+string = "it is in uppercase."  
+print(string.swapcase())  
+it is in lowercase. 
+IT IS IN UPPERCASE. 
+
+STRIp:>l&r
+To remove the whitespaces and trailing spaces from the string, Python providies strip([str]) built-in function. 
+
+string = "  javatpoint "  
+string2 = "    javatpoint        "  
+string3 = "       javatpoint"  
+print(string)  
+print(string2)  
+print(string3)  
+print("After stripping all have placed in a sequence:")  
+print(string.strip())  
+print(string2.strip())  
+print(string3.strip())  
+javatpoint 
+    javatpoint        
+       javatpoint
+
+
+IS: returns true when 2 operands are true  (Example: “a” is ‘a’)
+
+NOT: returns the inverse of the boolean value
+
+IN: checks if some element is present in some sequence
+
+Help() function: The help() function is used to display the documentation string and also facilitates you to see the help related to 
+modules, keywords, attributes, etc.
+Dir() function: The dir() function is used to display the defined symbols.
+
+For Modules/Library objects, it returns a list of all attributes, contained in that module.
+For Class Objects, it returns a list of all valid attributes and base attributes.
+With no arguments passed, it returns a list of attributes in the current scope.
+
+DICTIONARY:>
+The built-in datatypes in Python is called dictionary. 
+It defines one-to-one relationship between keys and values.
+Dictionaries contain pair of keys and their corresponding values. 
+Dictionaries are indexed by keys.
+
+dict={'Country':'India','Capital':'Delhi','PM':'Modi'}
+1
+print dict[Country]
+India
+1
+print dict[Capital]
+Delhi
+1
+print dict[PM]
+Modi
+
+
+TERNARY operators:>
+The Ternary operator is the operator that is used to show the 
+conditional statements. This consists of the true or false 
+values with a statement that has to be evaluated for it.
+
+lEN()
+ It is used to determine the length of a string,
+
+
+REGULAR EXPRESSION:>
+To modify the strings, Python’s “re” module is providing 3 methods. They are:
+
+split() – uses a regex pattern to “split” a given string into a list.
+sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+subn() – it is similar to sub() and also returns the new string along with the no. of replacements
+
+
+Python packages are namespaces containing multiple modules.
+
+delete file in python:>
+import os
+os.remove("xyz.txt")
+
+Built-in types in Python are as follows –
+
+Integers
+Floating-point
+Complex numbers
+Strings
+Boolean
+Built-in functions
+
+Elements can be added to an array using the append(),
+ extend([]) and the insert (i,x) functions.
+
+remove:> pop or remove
+a=arr.array('d', [1.1, 2.2, 3.8, 3.1, 3.7, 1.2, 4.6])
+print(a.pop())
+print(a.pop(3))
+a.remove(1.1)
+print(a)
+
+Global Interpreter Lock (GIL).MUltithreading
+GIL or the Global Interpreter Lock is a mutex, used to limit access to Python objects. 
+It synchronizes threads and prevents them from running at the same time.
+
+
+Python libraries are a collection of Python packages. 
+Some of the majorly used python libraries are – 
+Numpy, Pandas, Matplotlib, Scikit-learn 
+
+SPLIT:>
+
+You can use split() function to split a string based on a delimiter to a list of strings.
+You can use join() function to join a list of strings based on a delimiter to give a single string.
+
+string = "This is a string."
+string_list = string.split(' ') #delimiter is ‘space’ character or ‘ ‘
+print(string_list) #output: ['This', 'is', 'a', 'string.']
+
+print(' '.join(string_list)) #output: This is a string.
+
+a="edureka python"
+print(a.split())
+Output:  [‘edureka’, ‘python’]
+
+MODULES IMPORTING:>
+import array      
+import array as arr    
+from array import *
+
+
+INHERITANCE:>
+Inheritance allows One class to gain all the members(say attributes and methods) of another class.
+The class from which we are inheriting is called super-class and the class that is inherited is called a derived / child class
+
+
+Single Inheritance – where a derived class acquires the members
+ of a single super class.
+Multi-level inheritance     – a derived class d1 in inherited 
+                          from base class base1, and d2 are inherited from base2.
+Hierarchical inheritance      – from one base class you can 
+                            inherit any number of child classes
+Multiple inheritance – a derived class is inherited from
+                      more than one base class.
+
+Class in Python is created using the class keyword.
+class EMployee;
+
+ In Python, the term monkey patch only refers to
+dynamic modifications of a class or module at run-time.
+
+
+What is Polymorphism in Python?
+Ans: Polymorphism means the ability to take multiple forms.
+ So, for instance, if the parent class has a method named ABC
+ then the child class also can have a method with the same name 
+ABC having its own parameters and variables.
+ Python allows polymorphism.
+
+Define encapsulation in Python?
+Ans: Encapsulation means binding the code and the data together.
+ A Python class in an example of encapsulation.
+
+How do you do data abstraction in Python?
+Ans: Data Abstraction is providing only the required details 
+and hiding the implementation from the world. It can be achieved
+ in Python by using interfaces and abstract classes.
+
+object():>
+It returns a featureless object that is a base for all
+ classes. Also, it does not take any parameters
+
+def pyfunc(r):
+    for x in range(r):         (trainagle shape)
+        print(' '*(r-x-1)+'*'*(2*x+1))    
+pyfunc(5)
+
+with open(SOME_LARGE_FILE) as fh:
+count = 0
+text = fh.read()                   counting code 
+for character in text:
+    if character.isupper():
+count += 1
+
+count sum(1 for line in fh for character in line if character.isupper())
+
+list.sort()
+
+
+ Django architecture.MVT
+
+Flask does not do a lot for you meaning you will need to 
+specify the details, whereas Django does a lot for you 
+wherein you would not need to do much work. 
+Django consists of prewritten code, which 
+the user will need to analyze whereas 
+Flask gives the users to create their own code,
+
+Comparisions
+FLASK:>
+Flask is a “microframework” primarily build for a small
+ application with simpler requirements.
+ In flask, you have to use external libraries.
+ Flask is ready to use.
+pyramid:>
+Pyramid is built for larger applications. It provides flexibility
+ and lets the developer use the right tools for their project. 
+The developer can choose the database, URL structure, 
+templating style and more. Pyramid is heavy configurable.
+DJANGO:>
+Django can also be used for larger applications just like
+ Pyramid. It includes an ORM.
+
+negative index:>
+Negative indexes are the indexes from the end of the list or tuple or string.
+Arr[-1] means last element of array Arr[]
+
+ARGUMENTS:>
+*args
+
+*args is a special syntax used in function definition to pass variable-length argument.
+“*” means variable length 
+def multiply(a, b, *argv):
+    mul = a * b
+
+    for num in argv:
+        mul *= num
+
+    return mul
+
+print(multiply(1, 2, 3, 4, 5)) #output: 120
+**kwargs
+
+**kwargs is a special syntax used in function definition to pass variable-length keyworded argument.
+
+def tellArguments(**kwargs):
+    for key, value in kwargs.items():
+        print(key + ": " + value)
+tellArguments(arg1 = "argument 1", arg2 = "argument 2", arg3 = "argument 3")
+#output:
+# arg1: argument 1
+# arg2: argument 2
+# arg3: argument 3
+
+
+Script file must begin with #!/usr/bin/env python
+
+SLICING:>
+As the name suggests, ‘slicing’ is taking parts of.
+Syntax for slicing is [start : stop : step]
+
+start is the starting index from where to slice a list or tuple
+stop is the ending index or where to sop.
+step is the number of steps to jump.
+
+Default value for start is 0, stop is number of items, step is 1.
+Slicing can be done on strings, arrays, lists, and tuples.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(numbers[1 : : 2])  #output : [2, 4, 6, 8, 10]
+
+
+pass:>
+Pass by value: Copy of the actual object is passed. Changing the value of the copy of the object will not change the value of the original object.
+Pass by reference: Reference to the actual object is passed. Changing the value of the new object will change the value of the original object.
+In Python, arguments are passed by reference, i.e., reference to the actual object is passed.
+
+
+DOC string:>
+Documentation string or docstring is a multiline string used to document a specific code segment.
+The docstring should describe what the function or method does.
+
+UNITTEST:>
+unittest is a unit testing framework of Python.
+Unit testing means testing different components of software separately.
+
+MODULES & PACKAGES:>
+Simplicity: Working on a single module helps you focus on a relatively small portion of the problem at hand. 
+This makes development easier and less error-prone.
+
+Maintainability: Modules are designed to enforce logical boundaries between different problem domains.
+ If they are written in a manner that reduces interdependency, it is less likely that modifications in a
+ module might impact other parts of the program.
+
+Reusability: Functions defined in a module can be easily reused by other parts of the application.
+Scoping: Modules typically define a separate namespace, which helps avoid confusion between identifiers from other parts of the program.
+Modules, in general, are simply Python files with a .py extension and can have a set of functions, classes or variables defined and implemented.
+ They can be imported and initialized once using the import statement. If partial functionality is needed, import the requisite classes or 
+functions using from foo import bar.
+
+Packages allow for hierarchial structuring of the module namespace using dot notation. As, modules help avoid clashes between
+ global variable names, in a similary manner, packages help avoid clashes between module names.
+Creating a package is easy since it makes use of the system's inherent file structure. 
+So just stuff the modules into a folder and there you have it, the folder name as the package name.
+ Importing a module or its contents from this package requires the package name as prefix to the module name joined by a dot.
+
+
+Shallow copy & Deep copy:>
+To create copies of an object in Python, we need to use the copy module. Moreover,
+ there are two ways of creating copies for the given object using the copy module -
+
+Shallow Copy is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object.
+ If either of the values are references to other objects, just the reference addresses for the same are copied.
+Deep Copy copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.
+
+from copy import copy, deepcopy
+
+list_1 = [1, 2, [3, 5], 4]
+
+## shallow copy
+
+list_2 = copy(list_1) 
+list_2[3] = 7
+list_2[2].append(6)
+
+list_2    # output => [1, 2, [3, 5, 6], 7]
+list_1    # output => [1, 2, [3, 5, 6], 4]
+
+## deep copy
+
+list_3 = deepcopy(list_1)
+list_3[3] = 8
+list_3[2].append(7)
+
+list_3    # output => [1, 2, [3, 5, 6, 7], 8]
+list_1    # output => [1, 2, [3, 5, 6], 4]
+
+
+They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
+my_list = [2, 3, 5, 7, 11]
+
+squared_list = [x**2 for x in my_list]    # list comprehension
+# output => [4 , 9 , 25 , 49 , 121]
+
+squared_dict = {x:x**2 for x in my_list}    # dict comprehension
+# output => {11: 121, 2: 4 , 3: 9 , 5: 25 , 7: 49}
+Performing conditional filtering operations on the entire list
+my_list = [2, 3, 5, 7, 11]
+
+squared_list = [x**2 for x in my_list if x%2 != 0]    # list comprehension
+# output => [9 , 25 , 49 , 121]
+
+squared_dict = {x:x**2 for x in my_list if x%2 != 0}    # dict comprehension
+# output => {11: 121, 3: 9 , 5: 25 , 7: 49}
+Combining multiple lists into one
+Comprehensions allow for multiple iterators and hence, can be used to combine multiple lists into one.
+a = [1, 2, 3]
+b = [7, 8, 9]
+
+[(x + y) for (x,y) in zip(a,b)]  # parallel iterators
+# output => [8, 10, 12]
+
+[(x,y) for x in a for y in b]    # nested iterators
+# output => [(1, 7), (1, 8), (1, 9), (2, 7), (2, 8), (2, 9), (3, 7), (3, 8), (3, 9)]
+
+
+Decorators in Python are essentially functions that add functionality to an existing function in Python without changing the
+ structure of the function itself. They are represented by the @decorator_name in Python and are called in bottom-up fashion.
+
+
+PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug.
+ Pylint is another tool that verifies whether the module meets the coding standard.
+
+
+
+FILE PROCESSING MODE:>
+Read-only mode : Open a file for reading. It is the default mode.
+Write-only mode: Open a file for writing. If the file contains data, data would be lost. Other a new file is created.
+Read-Write mode: Open a file for reading, write mode. It means updating mode.
+Append mode: Open for writing, append to the end of the file, if the file exists.
+
+
+
+In Python 3, the old Unicode type has replaced by "str" type, and the string is treated as Unicode by default.
+ We can make a string in Unicode by using art.title.encode("utf-8") function.
+
+
+
+What are the different file processing modes supported by Python?
+Python provides three modes to open files. The read-only, write-only, read-write and append mode. 
+'r' is used to open a file in read-only mode, 'w' is used to open a file in write-only mode, 
+'rw' is used to open in reading and write mode, 'a' is used to open a file in append mode.
+ If the mode is not specified, by default file opens in read-only mode.
+
+Read-only mode : Open a file for reading. It is the default mode.
+Write-only mode: Open a file for writing. If the file contains data, data would be lost. Other a new file is created.
+Read-Write mode: Open a file for reading, write mode. It means updating mode.
+Append mode: Open for writing, append to the end of the file, if the file exists.
+
+operator:>
+An operator is a particular symbol which is used on some values and produces an output as a result.
+ An operator works on operands. Operands are numeric literals or variables which hold some values. O
+perators can be unary, binary or ternary. An operator which require a single operand known as a unary operator, 
+which require two operands known as a binary operator and which require three operands is called ternary operator.
+
+
+
+
+Which programming language is a good choice between Java and Python?
+
+Java and Python both are object-oriented programming languages. Let's compare both on some criteria given below:
+
+Criteria	Java	Python
+Ease of use	Good	Very Good
+Coding Speed	Average	Excellent
+Data types	Static type	Dynamic type
+Data Science and Machine learning application	Average	Very Good
+
+Python 2.x is an older version of Python. Python 3.x is newer and latest version. Python 2.x is legacy now. Python 3.x is the 
+present and future of this language.
+
+The most visible difference between Python2 and Python3 is in print statement (function). In Python 2, it looks like print "Hello",
+ and in Python 3, it is print ("Hello").
+
+String in Python2 is ASCII implicitly, and in Python3 it is Unicode.
+
+The xrange() method has removed from Python 3 version. A new keyword as is introduced in Error handling.
+
+ Why do lambda forms in Python not have the statements?
+Because it is used to make the new function object and return them in runtime.
+
+
+import smtplib  
+# Calling SMTP  
+s = smtplib.SMTP('smtp.gmail.com', 587)  
+# TLS for network security  
+s.starttls()  
+# User email Authentication  
+s.login("sender_email_id", "sender_email_id_password")  
+# message to be sent  
+message = "Message_you_need_to_send"  
+# sending the mail  
+s.sendmail("sender_email_id", "receiver_email_id", message) 
+
+Python strings, the backslash “\” could be a special character, also called the “escape” character. it’s utilized in representing certain
+ whitespace characters: “\t” may be a tab, “\n” could be a newline, and “\r” could be a printing operation. Conversely, prefixing a special
+ character with “\” turns it into a standard character.

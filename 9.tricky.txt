@@ -1,0 +1,235 @@
+s = "python"
+print(s[2:4])
+
+s = "python"
+print(list(s))
+l = ['p', 'y', 't', 'h', 'o', 'n']
+res = "".join(l)
+print(res)
+
+s = "i am learning python"
+count = 0
+for x in s.split("a"):
+    count+=1
+    print(x)
+print(count)
+
+s = "   python    "
+print(s)
+print(s.lstrip()) rstrip and lstrip
+
+l = (1,2,3,4,5)
+l1 = ["a","b","c","d","e",6]
+
+print(list(zip(l,l1))) zip is used to add list and tuple
+
+n = "2020"
+print(type(n))
+x = str(n)
+print(type(x))                   h.w
+print(list(int(n)))
+
+l = [2,0,2,0]
+
+
+s = "abc"
+print(s)
+a = s[::-1]
+print(a)
+
+word = input("enter a word : ")
+if word == word[::-1]:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+n = int(input("enter a no : ")) 
+x = str(n)
+if x == x[::-1]:
+    print("palindrome")
+else:
+    print("not a palindrome")
+'''
+#print(8%10)
+'''
+num = int(input("Enter value : "))
+temp = num
+
+r = 0
+while num>0:
+    d = num%10
+    r = r*10+d
+    num = num//10
+
+if temp == r:
+    print("palindrome no")
+else:
+    print("not a palindrome")
+'''
+
+======================================
+
+30/11/2020
+n = 12345678
+
+count = 0
+
+while n>0:
+    n //=10
+    count+=1
+
+print(count)
+
+def fun():
+    print("hi")
+    print("hello")
+
+fun()
+fun()
+fun()
+fun()
+'''
+
+s = "love mom and dad abc lef xyz aba bbc bcb cbc "
+count = 0
+for x in s.split():
+    if x == x[::-1]:
+     count+=1
+     print(x)
+print(count)
+
+n = "2020"
+print([(n)])
+print(n)
+y = [int(x) for x in str(n)]
+print(y)
+
+l= [2,0,2,0]
+a = (str(x)for x in l)
+y = "".join(a)
+z = int(y)
+print(z)
+
+num = int(input("Enter value : "))
+sum = 0
+while num>0:
+
+    d = num % 10
+    num = num // 10
+    sum = sum+d
+print(sum)
+
+n = 1234567891011112
+count = 0
+
+while n>0:
+    n //=10
+    count+=1
+
+print(count)
+
+n = int(input("enter a value"))
+temp = n
+sum = 0
+while n>0:
+    d = n%10
+    n = n // 10
+    sum = (sum+(d**3))
+
+if (temp!=sum):
+    print("non armstrong")
+else:
+    print("armstrong")
+
+n = int(input("enter a no : "))
+x = str(n)
+if x == x[::-1]:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+num = int(input("Enter value : "))
+temp = num
+
+r = 0
+while num>0:
+    d = num%10
+    r = r*10+d
+    num = num//10
+
+if temp == r:
+    print("palindrome no")
+else:
+    print("not a palindrome")
+
+
+
+l = ["python","css","js","html"]
+
+for x in l:
+    print("hello "," ",x)
+
+res = "".join(l)
+print(res)
+
+def fun(names):
+    for x in names:
+        print("hello"+" "+x)
+
+l = ["python","css","js","html"]
+
+fun(l)
+
+l = [23,1,54,22,76,34,58,37,42]
+l.sort()
+print(l[-2])
+
+l = [1,2,3,4,5,6,7,8,9,10]
+l1 = []
+l2 = []
+
+for x in l:
+    if x%2==0:
+        l1.append(x)
+    else:
+        l2.append(x)
+
+
+print(l1[-2]-l2[-2])
+'''
+
+print(abs(4-9))
+count = 0
+for x in data:
+    x = x.strip()
+    if x[0] == 't':
+        count+=1
+        print(x)
+
+print(count)
+
+l = [121,123,1221,1234,252,456]
+
+for x in l:
+    t = x
+    rev = 0
+    while t>0:
+        dig = t%10
+        rev = rev*10+dig
+        t = t//10
+    if rev == x:
+        print(x)
+
+for x in range(1,7):
+    if x%3!=0:
+        print(x)
+
+prime numbers:
+
+or x in range(1,100):
+    for y in range(2,x):
+        if(x%y==0):
+            break
+    else:
+         print(x)
+         

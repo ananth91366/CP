@@ -1,0 +1,95 @@
+24/11/2020
+a = 10
+b = 20
+
+print(a+b)
+
+operators:perform an operation between two operances
+
+arithametic(a+b,a-b,a*c,a/b,a//b,a%b)
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+print("sum of a and b is : ",(a+b))
+print("sub is : ",a-b)
+print("mul is : ",a*b)
+print("div is : ",a%b)
+
+
+assignment(a+=5,a-=6,a*=6,a%=3)
+a = 10
+print("a value is : ",a)
+a+=5 # a=a+5
+print("after adding 5 the a value : ",a)
+a*=6
+print("after mul by 6 the a value ",a)
+a%=10
+print("after div by 10 a value is",a)
+
+  
+relational
+x = 3
+print(x>2 and x<4) and both true only true
+print(x>3 and x<4)
+print(x>3 or x>4) or any one is true its true
+
+logical
+print(5&7) amplicent
+print(5|7) landa
+
+bitwise
+print(20>>3) >> division
+print(20<<3) << multiplication both done with 2 only 3 represents repetations
+ 
+
+membership
+s = "iam learning python"
+print('python' in s)
+print('python' not in s)
+
+
+identity
+a = 10
+print(id(a))
+b = 20
+print(id(b))
+print(a is not b)
+
+normal division a/b gives decimals
+floore division a//b without decimals
+modular division a%b reminder value
+
+programs
+
+a = int(input("Enter a value : "))
+b = int(input("Enter b value : "))
+print("sum of a and b is : ",(a+b))
+print("sub is : ",a-b)
+print("mul is : ",a*b)
+print("div is : ",a%b)
+print(10/4)
+print(10//4)
+print(10%4)
+a = 10
+print("a value is : ",a)
+a+=5 # a=a+5
+print("after adding 5 the a value : ",a)
+a*=6
+print("after mul by 6 the a value ",a)
+a%=10
+print("after div by 10 a value is",a)
+x = 3
+print(x>2 and x<4)
+print(x>3 and x<4)
+print(x>3 or x>4)
+print(5&7)
+print(5|7)
+print(20>>3)
+print(20<<3)
+s = "iam learning python"
+print('python' in s)
+print('python' not in s)
+a = 10
+print(id(a))
+b = 20
+print(id(b))
+print(a is not b)
